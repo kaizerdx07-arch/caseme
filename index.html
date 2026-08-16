@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CASEME — Custom iPhone Cases</title>
+<style>body{font-family:Arial,sans-serif;margin:0;background:#fafafa;color:#111}.wrap{max-width:1200px;margin:auto;padding:30px}.hero{padding:60px 0}.btn{padding:12px 18px;border-radius:10px;border:0;background:#111;color:#fff;text-decoration:none;display:inline-block}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}.card{background:#fff;border:1px solid #eee;border-radius:18px;padding:18px}.muted{color:#777}@media(max-width:650px){.wrap{padding:18px}}</style>
+</head>
+<body>
+<header class="wrap"><strong style="font-size:28px">CASEME</strong></header>
+<main class="wrap">
+<section class="hero"><div class="muted">DESIGN YOUR STYLE</div><h1>Real-looking cases.<br>Made for <span style="color:#6545e8">your iPhone.</span></h1><p>Choose your exact iPhone model, shop ready-made cases, or create a custom design with your own photo.</p><a class="btn" href="#shop">Shop Cases</a></section>
+<section id="shop"><h2>Choose your iPhone model</h2><div class="grid" id="models"></div></section>
+</main>
+<script>
+const MODELS=["iPhone 17 Pro Max","iPhone 17 Pro","iPhone Air","iPhone 17","iPhone 16 Pro Max","iPhone 16 Pro","iPhone 16 Plus","iPhone 16","iPhone 15 Pro Max","iPhone 15 Pro","iPhone 15 Plus","iPhone 15","iPhone 14 Pro Max","iPhone 14 Pro","iPhone 14 Plus","iPhone 14","iPhone 13 Pro Max","iPhone 13 Pro","iPhone 13 mini","iPhone 13","iPhone 12 Pro Max","iPhone 12 Pro","iPhone 12 mini","iPhone 12","iPhone 11 Pro Max","iPhone 11 Pro","iPhone 11"];
+document.getElementById('models').innerHTML=MODELS.map(m=>`<article class="card"><h3>${m}</h3><p class="muted">Model-specific CASEME cases</p><a class="btn" href="#shop">View cases</a></article>`).join('');
+</script>
+</body></html>
